@@ -1,0 +1,46 @@
+/* Base CSS for BetterDiscord Themes */
+/* This file contains reusable variables and default styles */
+
+:root {
+  /* Backgrounds */
+  --background-image: none; /* Default background (to be overridden) */
+  --home-image: none; /* Default home button image */
+
+  /* Colors */
+  --background-solid: #161921; /* Dark background */
+  --background-solid-dark: #101218; /* Darker background */
+  --background-solid-darker: #0c0e12; /* Even darker background */
+  --accent: 37, 172, 232; /* Main accent color */
+  --accent-alt: 29, 101, 134; /* Alternate accent color */
+
+  /* Fonts */
+  --main-font: 'gg sans', Helvetica, Arial, sans-serif;
+  --code-font: Consolas, 'Courier New', monospace;
+
+  /* Scrollbar */
+  --scrollbar-bg: rgba(0, 0, 0, 0.4);
+  --scrollbar-thumb: rgba(255, 255, 255, 0.6);
+
+  /* Miscellaneous */
+  --avatar-size: 32px; /* Default avatar size */
+}
+
+/* Apply Default Background */
+body {
+    background: var(--background-image) center / cover no-repeat fixed !important;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--scrollbar-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb);
+    border-radius: 6px;
+    border: 3px solid var(--scrollbar-bg);
+}
